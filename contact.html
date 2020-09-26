@@ -187,31 +187,31 @@
       </div>
 
       <div class="col-lg-6">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form action="" method="post" role="form" class="form-example">
           <div class="form-row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="name" class="form-control" id="names" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
               <div class="validate"></div>
             </div>
             <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="email" class="form-control" name="email" id="emails" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <input type="text" class="form-control" name="subject" id="subjects" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" id= "messages" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required ></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          </div> -->
+          <button type="submit" id="submit">Send Message</button>
         </form>
       </div>
 
@@ -366,8 +366,8 @@
             <h4>Join Our Newsletter</h4>
             <p>If you have any queries RLSGL we are here to hear you and provide all response</p>
             
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="contact.html" method="post">
+              <input type="email" id="emails" name="email"><input type="submit" id="subscribe" value="Subscribe">
             </form>
           </div>
 
@@ -414,6 +414,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+    <script src="assets/js/readings.js"></script>
+  <script src="assets/js/subscribe.js"></script>
+
 
 </body>
 
