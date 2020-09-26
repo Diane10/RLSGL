@@ -1,7 +1,7 @@
 // functions
 const subscribe =async()=>{
     const emails = document.getElementById('emails').value
-        const response = await fetch('http://rlsgldiane2020.herokuapp.com/subscribe/',{
+        const response = await fetch('https://rlsgldiane2020.herokuapp.com/subscribe/',{
             method:"POST",
             body:JSON.stringify(
                 {
