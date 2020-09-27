@@ -140,40 +140,40 @@
 
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
           <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="namep" placeholder="Enter Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Company Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" id="namec" placeholder="Enter Your Company Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                   <div class="col-md-6 form-group">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" name="email" class="form-control" id="emailp" placeholder="Enter Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validate"></div>
                   </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter your District" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" class="form-control" name="name" id="namedistr" placeholder="Enter your District" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Best Time to Call" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" class="form-control" name="name" id="nametime" placeholder="Best Time to Call" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                  
                   <div class="col-md-6 form-group">
-                    <input type="number" class="form-control" name="name" id="name" placeholder="Contact Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="number" class="form-control" name="name" id="telnum" placeholder="Contact Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Quote Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject1" placeholder="Quote Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Description"></textarea>
+                <textarea class="form-control" name="message" id="message1" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Description"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -181,7 +181,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="button" id="submitquote">Send Message</button></div>
             </form>
           </div>
 
