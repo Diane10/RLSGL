@@ -1,5 +1,5 @@
-// functions
-const add_contact =async()=>{
+
+    const add_contact =async()=>{
     const names = document.getElementById('names').value
     const emails = document.getElementById('emails').value
     const subjects = document.getElementById('subjects').value
@@ -15,20 +15,19 @@ const add_contact =async()=>{
             }),
             headers:{
                 "Content-Type": "application/json"
+              
             }
+          
         })
 
         const responseData = await response.json()
         console.log(responseData)
         if(response.ok){
-            location.href="../../index.html"
+            location.href="../../thankyou.html"
         }else{
             alert(responseData.error)
         }
     
-}
+    }
 
-
-// events
-
-document.getElementById('submit').addEventListener('click',add_contact)
+    document.getElementById('submitcon').addEventListener('click',add_contact)
